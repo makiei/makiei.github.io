@@ -7,7 +7,7 @@ AWS上に公開しているサーバにハニーポット(cowrie)をインスト
 ### Markdown
 
 ```markdown
-Syntax highlighted code block
+
 
 # Header 1
 ## Header 2
