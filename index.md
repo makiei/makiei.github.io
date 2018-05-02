@@ -1,6 +1,6 @@
 ## ハニーポット観察記
 
-You can use the [editor on GitHub](https://github.com/makiei/makiei.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+AWS上に公開しているサーバにハニーポット(cowrie)をインストールし、どういうアクションが起きるかを観察します。
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
