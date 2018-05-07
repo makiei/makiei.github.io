@@ -55,7 +55,7 @@ AWS上に公開しているサーバにハニーポット(cowrie)をインスト
 [HoneyPotSSHTransport,○○○,○○○.○○○.○.○○○] connection lost
 [HoneyPotSSHTransport,○○○,○○○.○○○.○.○○○] Connection lost after 0 seconds
 [cowrie.ssh.factory.CowrieSSHFactory] New connection: ○○.○○.○○○.○○○:45160 (○○○,○○○.○○○.○.○○○) [session: ce591eea566c]
-[cowrie.ssh.factory.CowrieSSHFactory] New connection: **.**.***.***:45164 (○○○,○○○.○○○.○.○○○) [session: e73deaa4c0b2]
+[cowrie.ssh.factory.CowrieSSHFactory] New connection: ○○.○○.○○○.○○○:45164 (○○○,○○○.○○○.○.○○○) [session: e73deaa4c0b2]
 [HoneyPotSSHTransport,○○○,○○○.○○○.○.○○○] Remote SSH version: SSH-2.0-OpenSSH_6.7p1 Raspbian-5+deb8u4
 [HoneyPotSSHTransport,○○○,○○○.○○○.○.○○○] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
 [HoneyPotSSHTransport,○○○,○○○.○○○.○.○○○] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
