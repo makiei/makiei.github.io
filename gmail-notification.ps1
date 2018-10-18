@@ -1,0 +1,29 @@
+function searchContactMail() {
+ 
+  /* Gmailから特定条件のスレッドを検索しメールを取り出す */
+  var strTerms = '("******回覧通知メール" OR '
+                  + '"回覧依頼の書類があります。")';
+  var myThreads = GmailApp.search(strTerms, 0, 30); //条件にマッチしたスレッドを取得
+  var myMsgs = GmailApp.getMessagesForThreads(myThreads); //スレッドからメールを取得する　→二次元配列で格納
+ 
+  var valMsgs = [];
+ 
+  /* 各メールから日時、送信元、件名、内容を取り出す*/
+  for(var i = 0;i < myMsgs.length;i++){
+ 
+    valMsgs[i] = [];
+    valMsgs[i][0] = myMsgs[i][0].getDate();
+    valMsgs[i][1] = myMsgs[i][0].getReplyTo();
+    valMsgs[i][2] = myMsgs[i][0].getSubject();
+    valMsgs[i][3] = myMsgs[i][0].getPlainBody().slice(0,200);
+    valMsgs[i][4] = myThreads[i].getPermalink();
+ 
+  }
+ 
+  /* スプレッドシートに出力 */
+  if(myMsgs.length>0){
+    
+    SpreadsheetApp.getActiveSheet().getRange(2, 1, i, 5).setValues(valMsgs); //シートに貼り付け
+    
+  }
+}
