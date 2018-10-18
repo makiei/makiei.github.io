@@ -1,0 +1,6 @@
+*microsoft officeのライセンスキーを自動入力するスクリプト
+
+@echo off
+set strPARAM=********←ライセンスキーが入る
+cscript //nologo "C:Program Files (x86)\Microsoft Office\Office15\OSPP.VBS" /inpkey:%srtPARAM%pause
+exit
