@@ -1,0 +1,6 @@
+*windowsPCのマシン名を変えるスクリプト
+
+
+@echo off
+set /p newname=PC name :
+wmic computersystem where name="%computername%" call rename name="%newname%"
